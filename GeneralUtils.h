@@ -1,19 +1,19 @@
 #pragma once
-
 #include <iostream>
 #include <string>
 
-using namespace std;
-
-namespace GeneralUtils {
-	void print(string text, bool endline = true) {
-		if (endline) cout << text << endl;
-		else cout << text;
+namespace GeneralUtils
+{
+	void print(std::string text, bool endline = true)
+	{
+		if (endline) std::cout << text << std::endl;
+		else std::cout << text;
 	}
 
-	string input() {
-		string temp;
-		cin >> temp;
+	std::string input()
+	{
+		std::string temp;
+		std::cin >> temp;
 		return temp;
 	}
 }
